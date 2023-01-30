@@ -1,22 +1,22 @@
-.body {
+body {
   background-color: rgba(255, 255, 255, .5);
 }
 
 .container {
   min-height:100vh;
   display:grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 200px 1fr;
 }
-
 .side-bar {
   display:flex;
   flex-direction: column;
-  grid-column: 1 / 2;
-  margin-left:1.6rem;
+  min-height: 100vh;
+  background-color: aliceblue;
 }
 
-.side-bar > h {
-  margin-top:1.2rem;
+.side-bar > h1, .dashboard-sections, .dashboard-second-sections {
+  margin-left: 1.5rem;
 }
 
 .header > hr {
@@ -58,5 +58,14 @@ line-height: 0.5;
 
 .btn:hover {
   background-color: rgba(240, 248, 255, .90);
+}
+
+.card {
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.card:hover {
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
