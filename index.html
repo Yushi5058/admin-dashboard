@@ -5,99 +5,86 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="flex">
-        <input type="search" name="search-tab" id="search-tab">
-        <svg class="bell-ring" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-ring</title><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg>
-      <img class="profile-picture" src="assets/aiden-profilepic.jpg" alt="aiden profile picture">
-      <p class="username">Aiden Montgomery</p>
-      </div>
-      <div class="mini-header">
-      <img class="profile-picture" src="assets/aiden-profilepic.jpg" alt="aiden profile picture">
-      <div>
-      <p class="subtitle">Hi there,</p>
-      <p class="title">Aiden Montgomery (@aiden)</p>
-      </div>
-     <!--  </div> -->
-      <div class="buttons">
-      <button>New</button>
-      <button>Upload</button>
-      <button>Share</button>
-      </div>
-    </header>
-    <div class="sidebar">
+  <main class="container">
+    <div class="side-bar">
       <h1>Dashboard</h1>
-      <div class="tab-1">
-        <p>Home</p>
-        <p>Profile</p>
-        <p>Messages</p>
-        <p>History</p>
-        <p>Tasks</p>
-        <p>Communities</p>
+      <p class="dashboard-sections">Home</p>
+      <p class="dashboard-sections">Profile</p>
+      <p class="dashboard-sections">Messages</p>
+      <p class="dashboard-sections">History</p>
+      <p class="dashboard-sections">Tasks</p>
+      <p class="dashboard-sections">Communities</p>
+    </div>
+    <p class="dashboard-second-sections">Settings</p>
+    <p class="dashboard-second-sections">Support</p>
+    <p class="dashboard-second-sections">Privacy</p>
+    <div class="header">
+      <input type="search" id="tab-search">
+      <p>Jonas Moroe</p>
+      <div class="header-profile">
+        <p>Hi there,</p>
+        <p>Jonas Moroe (@jonas)</p>
       </div>
-      <div class="tab-2">
-        <p>Settings</p>
-        <p>Support</p>
-        <p>Privacy</p>
+      <button class="btn">New</button>
+      <button class="btn">Upload</button>
+      <button class="btn">Share</button>
+    </div>
+    <div class="content-section">
+      <div class="mini-section">
+        <h1>Your projects</h1>
+        <div class="card">
+          <h1>super cool project</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        </div>
+        <div class="card">
+          <h1>super cool project</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        </div>
+        <div class="card">
+          <h1>super cool project</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        </div>
+        <div class="card">
+          <h1>super cool project</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        </div>
+        <div class="card">
+          <h1>super cool project</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        </div>
+        <div class="card">
+          <h1>super cool project</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        </div>
+      </div>
+      <div class="mini-section">
+        <h1>Announcements</h1>
+        <div class="card">
+          <h1>Site maintenance</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At magni accusamus voluptates totam repellat dolores consectetur modi quod tenetur sit, dignissimos recusandae. Et ea dolore tempora, maxime laudantium voluptatum dicta?</p>
+          <h1>Site maintenance</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At magni accusamus voluptates totam repellat dolores consectetur modi quod tenetur sit, dignissimos recusandae. Et ea dolore tempora, maxime laudantium voluptatum dicta?</p>
+          <h1>Site maintenance</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At magni accusamus voluptates totam repellat dolores consectetur modi quod tenetur sit, dignissimos recusandae. Et ea dolore tempora, maxime laudantium voluptatum dicta?</p>
+        </div>
+      </div>
+      <div class="mini-section">
+        <h1>Trending</h1>
+        <div class="card">
+          <h1>@someone</h1>
+          <p>some dummy status</p>
+          <h1>@someone</h1>
+          <p>some dummy status</p>
+          <h1>@someone</h1>
+          <p>some dummy status</p>
+          <h1>@someone</h1>
+          <p>some dummy status</p>
+        </div>
       </div>
     </div>
-    <div class="section-grid">
-    <div class="projects-section">
-      <h1>Your Projects</h1>
-      <div class="project">
-        <p>Super cool project</p>
-        <p>some dummy text to write in</p>
-      </div>
-      <div class="project">
-        <p>Less cool project</p>
-        <p>dummy text here</p>
-      </div>
-      <div class="project">
-        <p>impossible app</p>
-        <p>too many dummy texts here</p>
-      </div>
-      <div class="project">
-        <p>easy peasy app</p>
-        <p>something easy I guess here</p>
-      </div>
-      <div class="project">
-        <p>ad blocker</p>
-        <p>no more ads youhouu</p>
-      </div>
-      <div class="project">
-        <p>money maker</p>
-        <p>I can finally be rich haha</p>
-      </div>
-        <div class="annoucement-section">
-          <h1>Annoucements</h1>
-          <p>Site Maintenance</p>
-          <p>dummy text goes here</p>
-          <p>Community Share Day</p>
-          <p>something useless too</p>
-          <p>Updated Privacy Policy</p>
-          <p>maybe no more data lost</p>
-        </div>
-      </div>
-      <div class="trending-section">
-        <h1>Trending</h1>
-        <div class="trending-card">
-          <p>@Mark</p>
-          <p>Full stack developer at Orange</p>
-          <p>@John</p>
-          <p>Inventor of JSS, javascript syndrome</p>
-          <p>@aiden</p>
-          <p>Super cool project</p>
-          <p>@Gwen</p>
-          <p>Ben 10 game creator</p>
-        </div>
-      </div>
-      </div>
-  </div>
-
+  </main>
   
 </body>
 </html>
