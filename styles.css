@@ -1,18 +1,52 @@
 body {
-  background-color: rgba(255, 255, 255, .5);
+  font-family: 'Roboto', sans-serif;
 }
-
-.container {
-  min-height:100vh;
+.grid-container {
   display:grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: 250px 1fr;
+  grid-template-areas: "sidebar header"
+  "sidebar main" ;
+  height:100vh;
+  grid-gap:30px;
 }
+
+
+.main {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:"project project announcements"
+  "project project ."
+  "project project trending";
+}
+.project-section {
+  grid-area:project;
+}
+.announcements-section {
+  grid-area:announcements;
+  font-size:0.7rem;
+}
+.trending-section {
+  grid-area:trending;
+  font-size:0.7rem;
+}
+
+.communities {
+  margin-top:2rem;
+}
+
 .side-bar {
   display:flex;
   flex-direction: column;
-  min-height: 100vh;
   background-color: aliceblue;
+  grid-area:sidebar;
+}
+.header {
+  grid-area:header;
+}
+.main {
+  grid-area:main;
 }
 
 .side-bar > h1, .dashboard-sections, .dashboard-second-sections {
