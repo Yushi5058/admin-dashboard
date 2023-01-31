@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
 </head>
 <body>
   <main class="container">
@@ -58,11 +58,21 @@
     </div>
     
     <header class="header">
-      <input type="search" name="tab-search" id="tab-search">
-      <p>Anne Marie</p>
+      <div class="header-flex">
+        <div class="search-item">
+          <span class="material-symbols-outlined">search</span>
+          <input type="search" name="tab-search" id="tab-search">
+        </div>
+        <div class="flex-item">
+          <span class="material-symbols-outlined profile-icon">notifications_active</span>
+          <img src="assets/aiden-profilepic.jpg" class="profile-pic" alt="anne's profile picture">
+          <p class="profile-text">Anne Marie</p>
+        </div>
+      </div>
       <div class="header-profile">
-        <p>Hi there,</p>
-        <p>Anne Marie (@anne)</p>
+        <img src="assets/aiden-profilepic.jpg" class="header-pic" alt="anne's profile picture">
+        <p class="header-profile-para">Hi there,</p>
+            <p class="header-profile-title">Anne Marie (@anne)</p>
       </div>
       <div class="header-buttons">
         <button>New</button>
