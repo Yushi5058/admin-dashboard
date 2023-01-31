@@ -64,6 +64,15 @@ body {
   margin-top:1.2rem;
 }
 
+.sidebar-links {
+  text-decoration: none;
+  color:currentColor;
+}
+
+.sidebar-links:hover {
+  text-decoration:underline whitesmoke;
+}
+
 /* Header section */
 
 .header {
@@ -162,6 +171,8 @@ button :hover {
   background-color: var(--blue);
 
 }
+
+
 
 
 .main-content {
