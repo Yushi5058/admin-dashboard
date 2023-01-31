@@ -1,105 +1,39 @@
-body {
-  font-family: 'Roboto', sans-serif;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
-.grid-container {
+
+.container {
   display:grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 250px 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows:200px 1fr;
   grid-template-areas: "sidebar header"
   "sidebar main" ;
-  height:100vh;
-  grid-gap:30px;
 }
-
-
-.main {
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:"project project announcements"
-  "project project ."
-  "project project trending";
+.sidebar {
+  grid-area:sidebar;
+}
+.main-content {
+  grid-area:main;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-areas: "project announcements"
+  "project trending";
 }
 .project-section {
   grid-area:project;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
 }
 .announcements-section {
   grid-area:announcements;
-  font-size:0.7rem;
 }
 .trending-section {
   grid-area:trending;
-  font-size:0.7rem;
-}
-
-.communities {
-  margin-top:2rem;
-}
-
-.side-bar {
-  display:flex;
-  flex-direction: column;
-  background-color: aliceblue;
-  grid-area:sidebar;
 }
 .header {
   grid-area:header;
 }
-.main {
-  grid-area:main;
-}
-
-.side-bar > h1, .dashboard-sections, .dashboard-second-sections {
-  margin-left: 1.5rem;
-}
-
-.header > hr {
-  color:rgba(0,0,0,.5);
-  box-shadow: 100px solid black;
-}
-.flex-components {
-  display:flex;
-  gap:2rem;
-}
-
-#tab-search {
-  height:1.5rem;
-  margin:1.5rem 2rem;
-  width:70%;
-}
-.flex-components > p {
-  text-align: right;
-  margin-top: 1.4rem;
-}
-
-.header-profile {
-margin-left:5rem;
-line-height: 0.5;
-}
-.name-profile {
-  margin-left:1.15rem;
-  font-size:1.6rem;
-}
-.btn {
-  border-radius:15px;
-  background-color: rgba(240, 248, 255, .2);
-  font-weight: bold;
-  padding:.5rem;
-  position:relative;
-  left:100px;
-  cursor:pointer;
-}
-
-.btn:hover {
-  background-color: rgba(240, 248, 255, .90);
-}
-
-.card {
-  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
-  transition:0.3s;
-}
-
-.card:hover {
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
