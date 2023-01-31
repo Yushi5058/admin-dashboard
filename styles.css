@@ -23,15 +23,17 @@
 .sidebar {
   background-color: var(--blue);
   color:whitesmoke;
-  text-align: center;
   font-weight:bold;
+  text-align: center;
   grid-area:sidebar;
 }
 i {
-  margin-right:1.02rem;
+  text-align: left;
 }
+
 .sidebar > p {
   font-size:1.12rem;
+  text-align: center;
 }
 .sidebar > p+p {
   margin-top:1.15rem;
