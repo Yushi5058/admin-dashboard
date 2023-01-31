@@ -4,93 +4,85 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-  <script src="script.js"></script>
+  <title>Document</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="grid-container">
-    <div class="side-bar">
+  <main class="container">
+    <div class="sidebar">
       <h1>Dashboard</h1>
-      <p class="dashboard-sections">Home</p>
-      <p class="dashboard-sections">Profile</p>
-      <p class="dashboard-sections">Messages</p>
-      <p class="dashboard-sections">History</p>
-      <p class="dashboard-sections">Tasks</p>
-      <p class="dashboard-sections communities">Communities</p>
-    <p class="dashboard-second-sections">Settings</p>
-    <p class="dashboard-second-sections">Support</p>
-    <p class="dashboard-second-sections">Privacy</p>
+      <p class="sidebar-section-one">Home</p>
+      <p class="sidebar-section-one">Profile</p>
+      <p class="sidebar-section-one">Messages</p>
+      <p class="sidebar-section-one">History</p>
+      <p class="sidebar-section-one">Tasks</p>
+      <p class="sidebar-section-one">Communities</p>
+      <p class="sidebar-section-two">Settings</p>
+      <p class="sidebar-section-two">Support</p>
+      <p class="sidebar-section-two">Privacy</p>
     </div>
-    <div class="header">
-      <div class="flex-components">
-      <input type="search" id="tab-search">
-      <p>Jonas Moroe</p>
-      </div>
+    <header class="header">
+      <input type="search" name="tab-search" id="tab-search">
+      <p>Anne Marie</p>
       <div class="header-profile">
         <p>Hi there,</p>
-        <p class="name-profile">Jonas Moroe (@jonas)</p>
+        <p>Anne Marie (@anne)</p>
       </div>
-      <button class="btn">New</button>
-      <button class="btn">Upload</button>
-      <button class="btn">Share</button>
-      <hr>
-    </div>
-    <div class="main">
+      <div class="header-buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </header>
+    <div class="main-content">
       <div class="project-section">
-        <h1>Your projects</h1>
-        <div class="card">
-          <h1>super cool project</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        <div class="card card__project">
+          <h1>Some cool project</h1>
+          <p>Let's play I guess</p>
         </div>
-        <div class="card">
-          <h1>super cool project</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        <div class="card card__project">
+          <h1>Something useless</h1>
+          <p>Maybe not this time I guess</p>
         </div>
-        <div class="card">
-          <h1>super cool project</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        <div class="card card__project">
+          <h1>Test 1 2 3</h1>
+          <p>What does that title say ?</p>
         </div>
-        <div class="card">
-          <h1>super cool project</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        <div class="card card__project">
+          <h1>People these days ..</h1>
+          <p>Maybe another time</p>
         </div>
-        <div class="card">
-          <h1>super cool project</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        <div class="card card__project">
+          <h1>I'm tired</h1>
+          <p>Until I finish this I think</p>
         </div>
-        <div class="card">
-          <h1>super cool project</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quo quam distinctio delectus illo cupiditate repudiandae tenetur. Dolor velit, tempore sint sequi, autem necessitatibus quam doloribus possimus eligendi nulla adipisci.</p>
+        <div class="card card__project">
+          <h1>One more time</h1>
+          <p>and one step at a time</p>
         </div>
       </div>
-      <h1>Announcements</h1>
       <div class="announcements-section">
         <div class="card">
-          <h1>Site maintenance</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At magni accusamus voluptates totam repellat dolores consectetur modi quod tenetur sit, dignissimos recusandae. Et ea dolore tempora, maxime laudantium voluptatum dicta?</p>
+          <h1>Maintenance</h1>
+          <p>Something important</p>
           <hr>
-          <h1>Community share day</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At magni accusamus voluptates totam repellat dolores consectetur modi quod tenetur sit, dignissimos recusandae. Et ea dolore tempora, maxime laudantium voluptatum dicta?</p>
+          <h1>Something not important</h1>
+          <p>Maybe</p>
           <hr>
-          <h1>Something useless</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At magni accusamus voluptates totam repellat dolores consectetur modi quod tenetur sit, dignissimos recusandae. Et ea dolore tempora, maxime laudantium voluptatum dicta?</p>
+          <h1>People</h1>
+          <p>Yes them</p>
         </div>
       </div>
-      <h1>Trending</h1>
       <div class="trending-section">
         <div class="card">
-          <h1>@someone</h1>
-          <p>some dummy status</p>
-          <h1>@someone</h1>
-          <p>some dummy status</p>
-          <h1>@someone</h1>
-          <p>some dummy status</p>
-          <h1>@someone</h1>
-          <p>some dummy status</p>
+          <h1>@alisson</h1>
+          <p>World peace woman for peace</p>
+          <h1>@victor</h1>
+          <p>An useful writer</p>
+          <h1>@Evergreen</h1>
+          <p>Someone you probably don't know, me neither</p>
+          <h1>@Sara</h1>
+          <p>Your PE teacher</p>
         </div>
       </div>
     </div>
