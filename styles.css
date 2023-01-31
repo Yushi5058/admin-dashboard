@@ -27,6 +27,9 @@
   font-weight:bold;
   grid-area:sidebar;
 }
+i {
+  margin-right:1.02rem;
+}
 .sidebar > p {
   font-size:1.12rem;
 }
