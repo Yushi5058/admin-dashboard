@@ -121,8 +121,12 @@ input {
 
 .profile-icon {
   margin-right:50px;
+  cursor: pointer;
 }
 
+.profile-icon:hover {
+  color:var(--black-chocolate-light);
+}
 .search-item {
   display: flex;
   align-items: center;
@@ -173,7 +177,14 @@ button {
 button :hover {
   box-shadow: 0 10px 20px var(--black-chocolate);
   background-color: var(--blue);
+}
 
+.profile-link {
+  text-decoration: none;
+  color:currentColor;
+}
+.profile-link:hover {
+  text-decoration: underline var(--black-chocolate);
 }
 
 
