@@ -1,5 +1,6 @@
 :root {
-  --black-chocolate:#1F1300;
+  --black-chocolate:#1f1300;
+  --black-chocolate-light:rgba(31, 19, 0, 50%);
   --yellow:#E2C044;
   --blue:#273469;
 }
@@ -67,6 +68,8 @@ body {
 
 .header {
   grid-area:header;
+  box-shadow: 0 5px 20px var(--black-chocolate-light);
+  height:200px;
 }
 input {
   min-width:70%;
@@ -121,6 +124,7 @@ input {
 }
 .header-profile-title {
   font-size:1.5rem;
+  padding-left:130px;
 }
 
 .header-pic {
@@ -140,7 +144,23 @@ input {
 }
 
 button {
-  padding:1.15rem;
+  padding:.5rem;
+  width:90px;
+  background-color: var(--blue);
+  opacity: 70%;
+  color:whitesmoke;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor:pointer;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px var(--black-chocolate);
+  outline:none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+button :hover {
+  box-shadow: 0 10px 20px var(--black-chocolate);
+  background-color: var(--blue);
+
 }
 
 
