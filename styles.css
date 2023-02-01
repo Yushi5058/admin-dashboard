@@ -186,9 +186,7 @@ button :hover {
 .profile-link:hover {
   text-decoration: underline var(--black-chocolate);
 }
-
-
-
+ /* Main section */
 
 .main-content {
   grid-area:main;
@@ -198,12 +196,47 @@ button :hover {
   grid-template-areas: "project announcements"
   "project trending";
 }
+
+/* Project section  */
+
 .project-section {
   grid-area:project;
   display:grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(3,1fr);
+  place-items: center;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding:20px;
+  max-width: 100%;
+  width:500px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card__project {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap:2rem;
+  border-left:10px solid var(--yellow);
+}
+
+.project-title {
+  position:absolute;
+  top:30%;
+  left:20%;
+  margin-bottom:20px;
+}
+
+
+
+
 .announcements-section {
   grid-area:announcements;
 }
