@@ -191,6 +191,13 @@ button :hover {
   grid-template-areas: "project announcements"
   "project trending";
 }
+.icons-flex {
+  display:flex;
+  gap:20px;
+  justify-content: flex-end;
+  margin-right:20px;
+  margin-top: 20px;
+}
 
 /* Project section  */
 
@@ -240,10 +247,14 @@ button :hover {
 .card {
   margin-top:20px;
 }
+.card__announcements {
+width:500px;
+}
 
-
-.announcements-section:nth-child(2) {
+.announcements-title {
   margin-top:20px;
+  font-size:1.5rem;
+  text-align: center;
 }
 
 
@@ -251,4 +262,5 @@ button :hover {
 
 .trending-section {
   grid-area:trending;
+  margin-right:50px;
 }
