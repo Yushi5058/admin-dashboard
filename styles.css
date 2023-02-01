@@ -25,6 +25,13 @@ body {
   grid-template-areas: "sidebar header"
   "sidebar main" ;
 }
+a {
+  color:currentColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline currentColor;
+}
 /* Side-bar section */
 .sidebar {
   background-color: var(--blue);
@@ -62,15 +69,6 @@ body {
 
 .sidebar-section-one, .sidebar-section-two {
   margin-top:1.2rem;
-}
-
-.sidebar-links {
-  text-decoration: none;
-  color:currentColor;
-}
-
-.sidebar-links:hover {
-  text-decoration:underline whitesmoke;
 }
 
 /* Header section */
@@ -179,13 +177,6 @@ button :hover {
   background-color: var(--blue);
 }
 
-.profile-link {
-  text-decoration: none;
-  color:currentColor;
-}
-.profile-link:hover {
-  text-decoration: underline var(--black-chocolate);
-}
  /* Main section */
 
 .main-content {
@@ -202,9 +193,11 @@ button :hover {
 .project-section {
   grid-area:project;
   display:grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,1fr);
-  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(1fr, auto));
+  grid-auto-rows: minmax(1fr, auto);
+  place-items: stretch;
+  margin-left: 50px;
 }
 
 .card {
@@ -223,7 +216,7 @@ button :hover {
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap:2rem;
+  gap:1.15rem;
   border-left:10px solid var(--yellow);
 }
 
@@ -233,13 +226,28 @@ button :hover {
   left:20%;
   margin-bottom:20px;
 }
-
-
-
+/* Announcements section */
 
 .announcements-section {
   grid-area:announcements;
+  margin-right:50px;
 }
+.announcements-desc {
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.card {
+  margin-top:20px;
+}
+
+
+.announcements-section:nth-child(2) {
+  margin-top:20px;
+}
+
+
+
+
 .trending-section {
   grid-area:trending;
 }
