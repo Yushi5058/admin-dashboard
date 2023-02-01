@@ -40,6 +40,10 @@ a:hover {
   grid-area:sidebar;
   font-size:1.25rem;
 }
+.scroll-bar {
+  position:sticky;
+  top:0;
+}
 .sidebar-item {
   display: flex;
   align-items: center;
@@ -194,9 +198,7 @@ button :hover {
   grid-area:project;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, minmax(1fr, auto));
-  grid-auto-rows: minmax(1fr, auto);
-  place-items: stretch;
+  grid-template-rows: repeat(auto-fit,1fr);
   margin-left: 50px;
 }
 
@@ -213,18 +215,17 @@ button :hover {
 }
 
 .card__project {
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap:1.15rem;
   border-left:10px solid var(--yellow);
 }
 
 .project-title {
   position:absolute;
-  top:30%;
+  top:25%;
   left:20%;
   margin-bottom:20px;
+}
+.project-para {
+  margin-top:20px;
 }
 /* Announcements section */
 
