@@ -289,3 +289,8 @@ width:500px;
   grid-area:trending;
   margin-right:50px;
 }
+
+.trending-links :hover {
+  color:var(--blue);
+  font-weight:bold;
+}
