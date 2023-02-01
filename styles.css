@@ -265,9 +265,20 @@ width:500px;
   text-align: center;
 }
 
+/* Trending Section */
+.trending-grand-title {
+  text-align: center;
+}
+.trending-title {
+  margin-top:20px;
+  margin-bottom: 20px;
+}
 
-
-
+.trending-pic {
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+}
 .trending-section {
   grid-area:trending;
   margin-right:50px;
