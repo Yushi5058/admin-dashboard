@@ -197,6 +197,13 @@ button :hover {
   justify-content: flex-end;
   margin-right:20px;
   margin-top: 20px;
+  margin-bottom:0;
+  font-size:1.15rem;
+  cursor:pointer;
+}
+
+.project-icons:hover {
+  color:var(--yellow);
 }
 
 /* Project section  */
@@ -223,6 +230,7 @@ button :hover {
 
 .card__project {
   border-left:10px solid var(--yellow);
+  height:fit-content;
 }
 
 .project-title {
